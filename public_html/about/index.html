@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="screen and (max-width: 999px)" href="mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="about-style.css">
+    <link rel="icon" href="icon.png">
+    <title>About | Rashmi Jha</title>
+  </head>
+  
+  <body>
+
+    <div id="animatedBackground">
+
+        <div class="topnav">
+            <a href="https://rashmijha.co/portfolio">Portfolio</a>
+            <a href="https://rashmijha.co/contact/">Contact</a>
+            <a class="active" href="https://rashmijha.co/about/">About</a>
+            <a href="https://rashmijha.co/">Home</a>
+        </div>
+
+        <div class="box">
+        
+          <h1>about me</h1>
+          
+          <p>I'm pursuing a double major in mathematics (applied track) and computer science at Vanderbilt University, with an additional minor in South Asian language and culture. I was born in Bihar, India and I currently live in the Dallas-Fort Worth metroplex.</p>
+          
+          <p>My passions lie in the potential uses of technology to promote human welfare and education, while combating issues like climate change and racial injustice. My relevant technical skills include C++, Java, Python, AI/ML, and web design.</p>
+          
+          <a href="https://theyurixfoundation.org/" target="_blank" rel="noopener noreferrer"><img src="yx_logo.png" alt="" class="sq-img" align=left></a><p> I'm a media/publications lead for <a href="https://theyurixfoundation.org/">the YX Foundation</a>, a hybrid coalition-design lab dedicated to creating and analyzing deep tech through the framework of critical race theory.</p>
+          <p class="clear"></p>
+          
+          <img src="vu_logo.jpg" alt="" class="sq-img" align=left><p>On campus, I serve as the chair of Vanderbilt Student Government's Campus Alliance committee, a volunteer with the <a href="https://www.vanderbilt.edu/climatechange/" target="_blank" rel="noopener noreferrer">Vanderbilt Climate Change Initiative</a>, and a board member for my dance team, Vandy Raas :)</p>
+          <p class="clear"></p>
+          
+          <p>In my free time, you can find me reading, watching anime, or grinding out matches on <a href = "chess.com" target="_blank" rel="noopener noreferrer">chess.com</a>.</p>
+  
+        </div>
+
+        <button class="collapsible">reading list</button>
+        <div class="content">
+            <div class= "box">
+                <h5>books</h5>
+                <p>✰ A Terrible Thing to Waste: Environmental Racism and Its Assault on the American Mind - Harriet A. Washington</p>
+                <p>✰ A World of Three Zeros - Muhammad Yunus</p>
+                <p>✰ A Thousand Splendid Suns - Khaled Hosseini</p>
+                <p>✰ Chokehold: Policing Black Men - Paul Butler </p>
+                <p>✰ Battling Injustice - Supriya Vani</p>
+                <p>✰ Purple Hibiscus - Chimamanda Ngozi Adichie</p>
+                <p>✰ Educated - Tara Westover</p>
+                <p class="clear"></p>
+                <h5>other media</h5>
+                <p>✰ Connected (documentary series) - Surveillance episode</p>
+                <p>✰ 13th (documentary)</p>
+                <p>✰ <a href = "https://www.ted.com/talks/ron_finley_a_guerrilla_gardener_in_south_central_la?language=en" target="_blank" rel="noopener noreferrer">this TED talk</a> :)</p>
+            </div>
+        </div>
+        
+        
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+        
+    </div>
+
+  </body>
+</html>
+

@@ -1,0 +1,115 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-repeat: repeat;
+}
+
+#animatedBackground {
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  padding-bottom: 5%;
+  background: url(bg.jpg) repeat;
+  background-attachment:fixed ;
+  background-position: 0 0;
+  background-size: cover;
+/*adjust s value for speed*/
+  animation: animatedBackground 200s linear infinite;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+/*use negative width if you want it to flow right to left else and positive for left to right*/
+  to {
+    background-position: -10000px 0;
+  }
+}
+.box{
+  border:1px solid black;
+  background: rgba(235, 240, 255, 0.95);
+  padding: 30px;
+  text-align: center;
+  margin: auto;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: black;
+  font-family: 'Monaco',sans-serif;
+}
+
+.box h1{
+  border-bottom-style: solid;
+  border-bottom-color: #0024b3;
+  border-bottom-width: 3px;
+  font-size: 35px;
+  letter-spacing: 4px;
+  font-weight: 100;
+  font-family: 'Monaco',sans-serif;
+}
+.box h5{
+  font-size: 20px;
+  letter-spacing: 2.7px;
+  font-weight: 100;
+}
+
+
+.box p{
+  text-align: left;
+}
+
+
+.topnav {
+  background-color: rgba(235, 240, 255, 0.95);
+  overflow: hidden;
+  float: center;
+}
+
+
+.topnav a {
+  float: right;
+  font-family: 'Monaco',sans-serif;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background: rgb(19, 12, 97);
+  color: rgb(220, 221, 245);
+}
+
+
+.topnav a.active {
+  background-color: #605ee0;
+  color: white;
+}
+
+.topnav a.active:hover {
+  background-color: #4230b3;
+  color: rgb(235, 240, 255);
+}
+
+.fa {
+  padding: 40px;
+  font-size: 80px;
+  width: 30px;
+  height:30px;
+  margin:2%;
+
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #4230b3;
+  color: rgb(235, 240, 255);
+}
+
+.fa:hover {
+  opacity: 0.6;
+}

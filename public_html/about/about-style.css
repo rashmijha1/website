@@ -1,0 +1,174 @@
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-repeat: repeat;
+}
+
+.collapsible {
+          background: rgba(235, 240, 255, 0.96);
+          padding: 28px;
+          font-size: 40px;
+          letter-spacing: 4px;
+          font-weight: 100;
+          cursor: pointer;
+          text-align: center;
+          outline: none;
+          font-family: 'Monaco',sans-serif;
+          margin-left: 20%;
+          margin-right: 20%;
+          margin-top: 2%;
+          margin-bottom: 1%;
+          width: 60%;
+          text-decoration-line: underline;
+          text-underline-position: under;
+          text-decoration-color: #0024b3;
+}
+        
+.collapsible:hover {
+          background: rgba(19, 12, 97, 0.93);
+          color: rgb(235, 240, 255);
+          text-decoration-color: rgb(235, 240, 255);
+}
+        
+.content {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 1.6s ease-out;
+}
+
+#animatedBackground {
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  padding-bottom: 3%;
+  background: url(bg.jpg) repeat;
+  background-attachment:fixed ;
+  background-position: 0 0;
+  background-size: cover;
+/*adjust s value for speed*/
+  animation: animatedBackground 200s linear infinite;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+/*use negative width if you want it to flow right to left else and positive for left to right*/
+  to {
+    background-position: -10000px 0;
+  }
+}
+
+
+.box{
+  border:1px solid black;
+  background: rgba(235, 240, 255, 0.95);
+  padding: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 0;
+  margin-bottom: 2%;
+  color: black;
+  font-family: 'Monaco', 'Lucida Console',sans-serif;
+}
+
+.sq-img{
+  border: none;
+  width: 8%;
+  padding-right:2%;
+  opacity:1;
+  margin-bottom: 1%;
+  clear: left;
+}
+
+.sq-img:hover {
+  opacity: 0.7;
+}
+
+.p2 {
+    padding-top:2%;
+}
+
+.box-img{
+  border-radius: 30%;
+  border:0.2px solid #0024b3;
+  width: 240px;
+  height: 240px;
+}
+
+.box h1{
+  border-bottom-style: solid;
+  border-bottom-color: #0024b3;
+  border-bottom-width: 3px;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box h5{
+  font-size: 20px;
+  letter-spacing: 2.7px;
+  text-align: center;
+  font-weight: 100;
+}
+
+
+.box p{
+  text-align: justify;
+}
+
+.clear { clear: left; }
+
+
+.topnav {
+  background-color: rgba(235, 240, 255, 0.95);
+  overflow: hidden;
+  float: center;
+  margin-bottom: 3%;
+}
+
+
+.topnav a {
+  float: right;
+  font-family: 'Monaco',sans-serif;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background: rgb(19, 12, 97);
+  color: rgb(220, 221, 245);
+}
+
+
+.topnav a.active {
+  background-color: #605ee0;
+  color: white;
+}
+
+.topnav a.active:hover {
+  background-color: #4230b3;
+  color: rgb(235, 240, 255);
+}
+
+
+.fa {
+  padding: 40px;
+  font-size: 40px;
+  width: 30px;
+
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #4230b3;
+  color: rgb(235, 240, 255);
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
